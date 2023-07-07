@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap1 | sort -d | awk '{ printf "%s,", $0 } END { print "" }'
+ls -1Ap | sort -d --version-sort | awk '{ printf "%s,", $0 } END { print "" }'
